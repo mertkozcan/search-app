@@ -36,7 +36,7 @@
 }
 
 input {
-  text-indent: 35px;
+  text-indent: 38px;
 }
 
 .header-basket {
@@ -50,6 +50,7 @@ input {
   border-radius: 4px;
   align-items: center;
   text-align: center;
+  padding: 5px;
 }
 
 .header-basket-text {

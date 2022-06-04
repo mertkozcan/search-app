@@ -1,0 +1,12 @@
+.order-text {
+  margin-bottom: 8px;
+}
+
+.order-list p:hover {
+    cursor: pointer;
+    color: #FF6000;
+}
+
+.order-title {
+margin-bottom: 20px;
+}

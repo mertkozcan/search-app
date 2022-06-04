@@ -49,3 +49,9 @@ C:\Users\mertozcan\source\repos\HepsiburadaSearchApp\HepsiburadaSearchApp\obj\De
 C:\Users\mertozcan\source\repos\HepsiburadaSearchApp\HepsiburadaSearchApp\obj\Debug\netcoreapp3.1\HepsiburadaSearchApp.dll
 C:\Users\mertozcan\source\repos\HepsiburadaSearchApp\HepsiburadaSearchApp\obj\Debug\netcoreapp3.1\HepsiburadaSearchApp.pdb
 C:\Users\mertozcan\source\repos\HepsiburadaSearchApp\HepsiburadaSearchApp\obj\Debug\netcoreapp3.1\HepsiburadaSearchApp.genruntimeconfig.cache
+C:\Users\mertozcan\source\repos\HepsiburadaSearchApp\HepsiburadaSearchApp\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\mertozcan\source\repos\HepsiburadaSearchApp\HepsiburadaSearchApp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\mertozcan\source\repos\HepsiburadaSearchApp\HepsiburadaSearchApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\mertozcan\source\repos\HepsiburadaSearchApp\HepsiburadaSearchApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\mertozcan\source\repos\HepsiburadaSearchApp\HepsiburadaSearchApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\mertozcan\source\repos\HepsiburadaSearchApp\HepsiburadaSearchApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

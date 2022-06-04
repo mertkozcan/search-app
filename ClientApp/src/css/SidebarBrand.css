@@ -1,0 +1,12 @@
+.brand-text {
+  margin-bottom: 8px;
+}
+
+.brand-list p:hover {
+    cursor: pointer;
+    color: #FF6000;
+}
+
+.brand-title {
+margin-bottom: 20px;
+}

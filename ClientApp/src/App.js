@@ -1,20 +1,24 @@
-import React, { Component } from "react";
-import { Header } from "./components/Header";
-import  Main  from "./components/Main";
-import { Sidebar } from "./components/Sidebar";
-import { SubHeader } from "./components/SubHeader";
+import React, { Component, useState } from "react";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Sidebar from "./components/Sidebar";
+import SubHeader from "./components/SubHeader";
 
-export default class App extends Component {
-  static displayName = App.name;
+const App = () => {
+  const [searchText, setSearchText] = useState("");
 
-  render() {
-    return (
-      <div>
-        <Header />
-        <SubHeader />
-        <Sidebar/>
-        <Main />
-      </div>
-    );
-  }
-}
+  const handleSearchText = (search) => {
+    setSearchText(search);
+  };
+
+  return (
+    <div>
+      <Header handleSearchText={handleSearchText} />
+      <SubHeader />
+      <Sidebar />
+      <Main searchText={searchText} />
+    </div>
+  );
+};
+
+export default App;

@@ -1,27 +1,47 @@
 .sub-header {
   position: absolute;
-  left:5%;
+  left: 5%;
   right: 0%;
   top: 15%;
+  display: grid;
+  grid-template-columns: 75% 25%;
 }
 
 .page-title {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 28px;
-line-height: 100%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
 
-color: #484848;
+  color: #484848;
 }
 
 .sub-title {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 100%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
 
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.sub-header-select {
+  box-sizing: border-box;
+  border: 1px solid #b4b4bb;
+  border-radius: 4px;
+  width: 120px;
+  height: 50%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 143%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #b0b0b0;
 }

@@ -1,0 +1,12 @@
+.color-text {
+  margin-bottom: 8px;
+}
+
+.color-list p:hover {
+  cursor: pointer;
+  color: #ff6000;
+}
+
+.color-title {
+  margin-bottom: 20px;
+}

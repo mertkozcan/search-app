@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 import { GetBrands } from "../../actions/productAction";
 
@@ -9,23 +10,21 @@ function Brand(props) {
   const [selectedBrands, setSelectedBrands] = useState([]);
 
   useEffect(() => {
-    GetBrands().then((brands) => {
+    GetBrands(props.selectedColors).then((brands) => {
       setBrands(brands);
     });
-  }, []);
+  }, [props.selectedColors]);
 
   const handleClick = (brand) => {
-    var newSelectedBrands=selectedBrands;
-    if (newSelectedBrands.includes(brand)) {
-      const index = newSelectedBrands.indexOf(brand);
-      if (index > -1) {
-        newSelectedBrands.splice(index, 1);
-      }
-    }
-    else {
+    var newSelectedBrands = [];
+    if (selectedBrands.includes(brand)) {
+      newSelectedBrands=selectedBrands.filter((item)=>item!=brand);
+    } else {
       newSelectedBrands.push(brand);
     }
     setSelectedBrands(newSelectedBrands);
+
+    props.handleSelectedBrands(newSelectedBrands);
   };
 
   return (
@@ -48,5 +47,10 @@ function Brand(props) {
     </div>
   );
 }
+
+Brand.propTypes = {
+  handleSelectedBrands: PropTypes.func,
+  selectedColors: PropTypes.array,
+};
 
 export default Brand;

@@ -1,3 +1,28 @@
 .product {
     left: 30%;
 }
+
+.product:hover {
+    box-sizing: border-box;
+    border: 1px solid #b4b4bb;
+    border-radius: 4px;
+}
+
+.add-basket {
+    color: #FF6000;
+    box-sizing: border-box;
+    position: absolute;
+    width: 120px;
+    height: 3.5%;
+    border: 1px solid #b0b0b0;
+    border-radius: 4px;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    margin-left: 7%;
+    margin-top: 3%;
+}
+
+.add-basket:hover {
+    cursor: pointer;
+}

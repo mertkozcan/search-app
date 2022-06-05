@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 import { GetColors } from "../../actions/productAction";
 
@@ -9,22 +10,21 @@ function Color(props) {
   const [selectedColors, setSelectedColors] = useState([]);
 
   useEffect(() => {
-    GetColors().then((colors) => {
+    GetColors(props.selectedBrands).then((colors) => {
       setColors(colors);
     });
-  }, []);
+  }, [props.selectedBrands]);
 
   const handleClick = (color) => {
-    var newSelectedColors = selectedColors;
-    if (newSelectedColors.includes(color)) {
-      const index = newSelectedColors.indexOf(color);
-      if (index > -1) {
-        newSelectedColors.splice(index, 1);
-      }
+    var newSelectedColors = [];
+    if (selectedColors.includes(color)) {
+      newSelectedColors=selectedColors.filter((item)=>item!=color);
     } else {
       newSelectedColors.push(color);
     }
     setSelectedColors(newSelectedColors);
+
+    props.handleSelectedColors(newSelectedColors);
   };
 
   return (
@@ -47,5 +47,10 @@ function Color(props) {
     </div>
   );
 }
+
+Color.propTypes = {
+  handleSelectedColors: PropTypes.func,
+  selectedBrands: PropTypes.array,
+};
 
 export default Color;

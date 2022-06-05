@@ -6,17 +6,24 @@ import SubHeader from "./components/SubHeader";
 
 const App = () => {
   const [searchText, setSearchText] = useState("");
+  const [colorFilters,setColorFilters] = useState([]);
+  const [brandFilters,setBrandFilters] = useState([]);
 
   const handleSearchText = (search) => {
     setSearchText(search);
   };
 
+  const handleFilters = (colors,brands) => {
+    setColorFilters(colors);
+    setBrandFilters(brands);
+  }
+
   return (
     <div>
       <Header handleSearchText={handleSearchText} />
       <SubHeader />
-      <Sidebar />
-      <Main searchText={searchText} />
+      <Sidebar handleFilters={handleFilters} />
+      <Main searchText={searchText} colorFilters={colorFilters} brandFilters={brandFilters} />
     </div>
   );
 };

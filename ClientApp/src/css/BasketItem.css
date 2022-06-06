@@ -1,0 +1,19 @@
+.basket-item-remove {
+  margin-left: 100px;
+  box-sizing: border-box;
+  border: 1px solid #b0b0b0;
+  border-radius: 4px;
+  width: 65px;
+  text-align: center;
+}
+
+.basket-item-remove:hover {
+  cursor: pointer;
+}
+
+.basket-item-img {
+  width: 60px;
+  height: 60px;
+  margin-left: 30px;
+  margin-top: 30px;
+}

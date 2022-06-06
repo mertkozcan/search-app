@@ -19,18 +19,22 @@ const Sidebar = (props) => {
     setSelectedColors(colors);
     props.handleFilters(colors,selectedBrands);
   };
+    const handleSelectedOrder = (order) => {
+    props.handleOrder(order);
+  };
 
   return (
     <div className="sidebar">
       <Color handleSelectedColors={handleSelectedColors} selectedBrands={selectedBrands} />
-      <Order />
+      <Order handleSelectedOrder={handleSelectedOrder} />
       <Brand handleSelectedBrands={handleSelectedBrands} selectedColors={selectedColors} />
     </div>
   );
 };
 
 Sidebar.propTypes = {
-  handleFilters: PropTypes.func
+  handleFilters: PropTypes.func,
+  handleOrder: PropTypes.func
 };
 
 export default Sidebar;

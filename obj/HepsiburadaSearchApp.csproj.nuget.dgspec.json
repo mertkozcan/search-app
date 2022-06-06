@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mertozcan\\source\\repos\\HepsiburadaSearchApp\\HepsiburadaSearchApp\\HepsiburadaSearchApp.csproj": {}
+    "E:\\Projects\\SearchApp\\hepsiburada-search-app\\HepsiburadaSearchApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mertozcan\\source\\repos\\HepsiburadaSearchApp\\HepsiburadaSearchApp\\HepsiburadaSearchApp.csproj": {
+    "E:\\Projects\\SearchApp\\hepsiburada-search-app\\HepsiburadaSearchApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mertozcan\\source\\repos\\HepsiburadaSearchApp\\HepsiburadaSearchApp\\HepsiburadaSearchApp.csproj",
+        "projectUniqueName": "E:\\Projects\\SearchApp\\hepsiburada-search-app\\HepsiburadaSearchApp.csproj",
         "projectName": "HepsiburadaSearchApp",
-        "projectPath": "C:\\Users\\mertozcan\\source\\repos\\HepsiburadaSearchApp\\HepsiburadaSearchApp\\HepsiburadaSearchApp.csproj",
-        "packagesPath": "C:\\Users\\mertozcan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mertozcan\\source\\repos\\HepsiburadaSearchApp\\HepsiburadaSearchApp\\obj\\",
+        "projectPath": "E:\\Projects\\SearchApp\\hepsiburada-search-app\\HepsiburadaSearchApp.csproj",
+        "packagesPath": "C:\\Users\\mertk\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\SearchApp\\hepsiburada-search-app\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\mertozcan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mertk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,6 +63,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.12, 3.1.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -74,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.3.21202.5\\RuntimeIdentifierGraph.json"
         }
       }
     }

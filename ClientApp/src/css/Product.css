@@ -1,28 +1,77 @@
 .product {
-    left: 30%;
+  left: 30%;
+  width: 240px;
+  display: inline;
 }
 
 .product:hover {
-    box-sizing: border-box;
-    border: 1px solid #b4b4bb;
-    border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #b4b4bb;
+  border-radius: 4px;
 }
 
 .add-basket {
-    color: #FF6000;
-    box-sizing: border-box;
-    position: absolute;
-    width: 120px;
-    height: 3.5%;
-    border: 1px solid #b0b0b0;
-    border-radius: 4px;
-    align-items: center;
-    text-align: center;
-    padding: 5px;
-    margin-left: 7%;
-    margin-top: 3%;
+  color: #ff6000;
+  box-sizing: border-box;
+  position: absolute;
+  width: 220px;
+  height: 35px;
+  border: 1px solid #b0b0b0;
+  border-radius: 4px;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+  padding: 3px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.add-basket-disabled {
+  color: #b0b0b0;
+  box-sizing: border-box;
+  position: absolute;
+  width: 220px;
+  height: 35px;
+  border: 1px solid #b0b0b0;
+  border-radius: 4px;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+  padding: 3px;
+  margin-left: 8px;
+  cursor: default;
 }
 
 .add-basket:hover {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.product-image {
+  box-sizing: border-box;
+  border: 1px solid #b4b4bb;
+  border-radius: 4px;
+  width: 240px;
+  padding: 5px;
+}
+
+.product-image-hover {
+  width: 240px;
+  padding: 5px;
+}
+
+.product-p {
+  margin-bottom: 0px;
+}
+
+.product-price {
+  text-decoration: line-through;
+  color: #9b9b9b;
+}
+
+.product-discount {
+  color: #f90000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
 }

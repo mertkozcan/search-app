@@ -13,7 +13,7 @@ public class DBAccess
 
     private string GetConnectionString() {
 
-        return "Data Source=VG023\\VG023;Initial Catalog=HepsiburadaSearchDB;Integrated Security=True;Connection Timeout=10;";
+        return "Data Source=DESKTOP-6M97N0N;Initial Catalog=HepsiburadaSearchDB;Integrated Security=True;Connection Timeout=10;";
     }
 
      public bool FillDt(ref DataTable dt, string query)

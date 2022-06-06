@@ -1,30 +1,38 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 import "../css/SubHeader.css";
 
-const SubHeader = () => {
+const SubHeader = (props) => {
 
-  const handleChange = (event) => {};
-
+  const handleChange = (event) => {
+    props.handleOrder(event.target.value);
+  };
   return (
     <div className="sub-header">
       <div>
-        <h5 className="page-title">iPhone iOS cep telefonu</h5>
-        <p className="sub-title">Aranan Kelime:iphone</p>
+        <h5 className="page-title">Arama</h5>
+        <p className="sub-title">{props.searchText && props.searchText.length>1 ? "Aranan Kelime: " + props.searchText : ""}</p>
       </div>
       <div>
-        <select onChange={handleChange} value="" className="sub-header-select">
+        <select onChange={handleChange} value={props.selectedOrder ? props.selectedOrder : ""} className="sub-header-select">
           <option value="" disabled hidden>
             Sıralama
           </option>
-          <option value="First">En Düşük Fiyat</option>
-          <option value="Second">En Yüksek Fiyat</option>
-          <option value="Third">En Yeniler {"(A" + ">" + "Z)"}</option>
-          <option value="Fourth">En Yeniler {"(Z" + ">" + "A)"}</option>
+          <option value="PRICE_ASC">En Düşük Fiyat</option>
+          <option value="PRICE_DESC">En Yüksek Fiyat</option>
+          <option value="NEW_ASC">En Yeniler {"(A" + ">" + "Z)"}</option>
+          <option value="NEW_DESC">En Yeniler {"(Z" + ">" + "A)"}</option>
         </select>
       </div>
     </div>
   );
+};
+
+SubHeader.propTypes = {
+  handleOrder: PropTypes.func,
+  selectedOrder: PropTypes.string,
+  searchText: PropTypes.string
 };
 
 export default SubHeader;

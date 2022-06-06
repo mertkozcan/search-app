@@ -7,7 +7,8 @@ import SubHeader from "./components/SubHeader";
 const App = () => {
   const [searchText, setSearchText] = useState("");
   const [colorFilters,setColorFilters] = useState([]);
-  const [brandFilters,setBrandFilters] = useState([]);
+  const [brandFilters, setBrandFilters] = useState([]);
+    const [order, setOrder] = useState("");
 
   const handleSearchText = (search) => {
     setSearchText(search);
@@ -18,12 +19,16 @@ const App = () => {
     setBrandFilters(brands);
   }
 
+  const handleOrder = (order) => {
+    setOrder(order);
+  }
+
   return (
     <div>
       <Header handleSearchText={handleSearchText} />
-      <SubHeader />
-      <Sidebar handleFilters={handleFilters} />
-      <Main searchText={searchText} colorFilters={colorFilters} brandFilters={brandFilters} />
+      <SubHeader searchText={searchText} handleOrder={handleOrder} selectedOrder={order} />
+      <Sidebar handleFilters={handleFilters} handleOrder={handleOrder} />
+      <Main searchText={searchText} colorFilters={colorFilters} brandFilters={brandFilters} order={order} />
     </div>
   );
 };

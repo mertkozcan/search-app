@@ -8,4 +8,4 @@
   Using XUnit for basic unit testing.
   
 # Database
-  Microsoft SQL SERVER
+  Microsoft SQL SERVER. Scripts can be found in the /Scripts folder.
